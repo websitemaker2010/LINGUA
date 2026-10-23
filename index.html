@@ -260,7 +260,7 @@ details{border-bottom:1px solid var(--line)}
 summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-weight:800;font-size:1.15rem;min-height:56px}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:28px;font-weight:400;color:var(--bl);transition:transform .25s}
-details[open] summary::after{transform:rotate(45deg)}
+.fq:not(.js) details[open] summary::after,.fq details.on summary::after{transform:rotate(45deg)}
 details p{padding:0 40px 24px 0;color:var(--mut)}
 summary:hover{color:var(--bl)}
 /* next level (финальный CTA) */
@@ -635,6 +635,27 @@ function start(){a=[];i=0;show('qzR');render();$('test').scrollIntoView({block:'
 $('qzGo').onclick=start;$('qzAg').onclick=start;
 $('qzBk').onclick=function(){if(i>0){i--;render()}};
 $('qzN').onclick=function(){if(a[i]===undefined)return;if(i<Q.length-1){i++;render()}else finish()};
+})();
+</script>
+<script>
+// FAQ: ответы раскрываются и сворачиваются плавно, открыт один пункт за раз
+(function(){
+var fq=document.querySelector('.fq');if(!fq||!Element.prototype.animate)return;
+var ds=[].slice.call(fq.querySelectorAll('details')),rm=matchMedia('(prefers-reduced-motion: reduce)');
+function set(d,o){
+var s=d.querySelector('summary'),p=d.querySelector('p'),from=d.offsetHeight;
+d._o=o;d.classList.toggle('on',o);if(d._a){d._a.cancel();d._a=null}
+if(rm.matches){d.open=o;return}
+d.open=true;var to=o?d.offsetHeight:s.offsetHeight+d.offsetHeight-d.clientHeight;
+d.style.overflow='hidden';
+var a=d._a=d.animate({height:[from+'px',to+'px']},{duration:Math.min(450,220+Math.abs(to-from)),easing:'cubic-bezier(.2,.7,.2,1)'});
+if(o)p.animate({opacity:[0,1],transform:['translateY(-6px)','none']},{duration:350,delay:60,easing:'ease-out',fill:'backwards'});
+a.onfinish=function(){d._a=null;d.style.overflow='';if(!o)d.open=false}}
+// эксклюзивность берём на себя: нативный name закрывал бы соседей без анимации
+ds.forEach(function(d){d.removeAttribute('name');d._o=d.open;d.classList.toggle('on',d.open);
+d.querySelector('summary').addEventListener('click',function(e){e.preventDefault();var o=!d._o;
+if(o)ds.forEach(function(x){if(x!==d&&x._o)set(x,false)});set(d,o)})});
+fq.classList.add('js');
 })();
 </script>
 </body>
