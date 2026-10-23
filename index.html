@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LINGUA — онлайн-школа английского языка</title>
+<meta name="description" content="LINGUA — онлайн-школа английского для карьеры, путешествий и экзаменов. Демонстрационный сайт: запишитесь на пробный урок.">
+<meta property="og:title" content="LINGUA — английский, который открывает двери">
+<meta property="og:description" content="Онлайн-школа английского: индивидуальная траектория и практика речи на каждом занятии.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=1200&h=630&fit=crop&crop=faces&q=75&auto=format">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3ECDD">
+<script>try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('bk-run')}catch(e){}</script>
+<noscript><style>.rev{opacity:1;transform:none}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233155E7'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='800' text-anchor='middle' fill='%23D9F36A' font-family='sans-serif'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3ECDD;--ink:#191919;--blue:#3155E7;--lime:#D9F36A;--gray:#E2D6BA;--mut:#47473f;--line:#19191922;--bl:#2A49D6;--beige:#E9DFCB;box-sizing:border-box}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141413;--ink:#F3F1EA;--gray:#1E1E1C;--mut:#a9a8a0;--line:#f3f1ea26;--bl:#7D95FF;--beige:#2B2820}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3{line-height:1.05;letter-spacing:-.03em;margin:0;font-weight:800}
+h1{font-size:clamp(2.4rem,6.2vw,4.8rem)}h2{font-size:clamp(2rem,5vw,3.6rem);max-width:18em;text-wrap:balance}h3{font-size:1.4rem;letter-spacing:-.01em}
+p{margin:0}
+.w{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+section{padding:clamp(64px,10vw,130px) 0}
+.eyebrow{font:800 12px/1 Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--bl);display:block;margin-bottom:18px}
+.mut{color:var(--mut)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--bl);outline-offset:3px;border-radius:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:0;border-radius:99px;background:var(--blue);color:#fff;font:800 16px Manrope,sans-serif;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s;max-width:100%;text-align:center}
+.btn:hover{transform:translateY(-2px);background:#2443c9}.btn:active{transform:translateY(0) scale(.98)}
+.btn[disabled]{opacity:.7;cursor:progress}
+.btn.lime{background:var(--lime);color:#191919}.btn.lime:hover{background:#cbe857;box-shadow:0 10px 30px #d9f36a55}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.link{font-weight:800;text-decoration:none;border-bottom:2px solid var(--lime);padding:6px 0;background:none;border-top:0;border-left:0;border-right:0;color:inherit;cursor:pointer;font-family:inherit;font-size:inherit;min-height:44px;display:inline-flex;align-items:center}
+.link:hover{color:var(--bl)}
+/* header */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.hb{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:800 24px Manrope,sans-serif;letter-spacing:.08em;text-decoration:none}.logo i{font-style:normal;color:var(--bl)}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-weight:600;font-size:15px;position:relative}nav a:hover,nav a[aria-current]{color:var(--bl)}
+nav a[aria-current]::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--lime);border-radius:2px}
+.burger{display:none;width:48px;height:48px;border:0;background:none;color:var(--ink);cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:currentColor;margin:6px auto;transition:.25s}
+.hcta{padding:0 22px;min-height:44px;font-size:15px}
+@media(min-width:861px) and (max-width:1000px){nav ul{gap:18px}}
+@media(max-width:860px){.burger{display:block}.hcta{display:none}
+nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s}
+nav:not(.open){visibility:hidden}
+nav.open{max-height:420px}nav ul{flex-direction:column;gap:0;padding:8px clamp(18px,4vw,40px) 20px}nav li a{display:block;padding:14px 0;font-size:20px}nav a[aria-current]::after{display:none}
+.burger[aria-expanded=true] span:first-child{transform:translateY(4px) rotate(45deg)}.burger[aria-expanded=true] span:last-child{transform:translateY(-4px) rotate(-45deg)}}
+/* hero */
+.hero{padding-top:clamp(40px,7vw,90px);overflow:hidden;overflow:clip}
+.hg{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,70px);align-items:center}
+.hero h1{line-height:1.1}.hero h1 em{font-style:normal;color:var(--bl)}
+.hero .sub{font-size:clamp(1.05rem,2vw,1.25rem);max-width:34em;margin:26px 0 34px;color:var(--mut)}
+.acts{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn .ar{display:inline-block;transition:transform .2s}.btn:hover .ar{transform:translateX(4px)}
+.nx .btn.ghost{color:#fff;box-shadow:inset 0 0 0 1.5px #ffffff8c}.nx .btn.ghost:hover{background:#fff;color:#2443c9}
+@media(max-width:600px){.hero .acts .btn,.nx .acts .btn{width:100%}}
+.stage{position:relative;aspect-ratio:4/5;max-width:520px;width:100%;margin:0 auto;container-type:inline-size}
+.photo{position:absolute;z-index:1;inset:0 0 0 8%;background:var(--blue);border-radius:200px 200px 16px 16px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#19191966)}
+.chip{position:absolute;z-index:3;background:var(--bg);color:var(--ink);border-radius:14px;padding:12px 16px;font-weight:800;font-size:14px;box-shadow:0 0 0 1px var(--line),0 10px 30px #0000001f}
+.c1{right:0;top:16%;background:var(--lime);color:#191919;animation:fl 5s ease-in-out infinite}.c2{left:0;top:4%;animation:fl 6s ease-in-out -2s infinite}.c3{left:14%;right:5%;bottom:5%;background:var(--ink);color:var(--bg)}.c3 small{color:inherit;opacity:.7}@keyframes fl{50%{transform:translateY(-8px)}}
+.tr{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px 24px;padding:20px 0 0;margin:40px 0 0;max-width:36em;border-top:1.5px solid var(--ink);font-weight:600;font-size:14px}.tr li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 2px var(--bl);margin-right:9px}
+.c2 small,.c3 small{display:block;font-weight:600;font-size:12px}.c2 small{color:var(--mut)}
+.bar{height:6px;background:var(--gray);border-radius:9px;margin-top:8px;overflow:hidden;width:120px}.bar b{display:block;height:100%;width:62%;background:var(--bl)}
+@media(max-width:860px){.hg{grid-template-columns:minmax(0,1fr)}.stage{max-width:380px}}
+/* первый экран закрепляется, следующий блок наезжает на него сверху */
+.hero{position:sticky;top:var(--hero-top,0px);z-index:1}
+.hero>.w{transform-origin:50% 35%}
+:where(main>section:not(.hero)){position:relative;z-index:2;background-color:var(--bg)}
+#why{border-radius:clamp(24px,4vw,44px) clamp(24px,4vw,44px) 0 0;box-shadow:0 -30px 60px -24px rgba(25,25,25,.28)}
+/* hero: 3D-книга. Базовые стили = финальная композиция (без JS / reduced motion).
+   html.bk-run — ждём старта, .bk-go — проигрываем один раз, .bk-end — спокойное состояние */
+.bk-scene{position:absolute;inset:0;z-index:2;pointer-events:none;--bw:34cqw;--bh:calc(var(--bw)*1.36);--t:calc(var(--bw)*.12);--wc:#2346e0;--pc:#4f86ff;--fx:0cqw;--fy:-12cqw;--fs:1.05}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .bk-scene{--wc:#e3ecff;--pc:#9cc6ff}}
+.bk-glow{position:absolute;left:50%;top:56%;width:120cqw;height:100cqw;border-radius:50%;background:radial-gradient(closest-side,rgba(86,140,255,.34),rgba(124,108,255,.12) 55%,transparent);transform:translate(calc(-50% + var(--fx)),calc(-50% + var(--fy))) scale(.85);opacity:.7;animation:bkPulse 8s ease-in-out infinite}
+.bk-move{position:absolute;left:50%;top:56%;width:0;height:0;transform:translate3d(var(--fx),var(--fy),0) scale(var(--fs));opacity:1;filter:blur(0)}
+.bk-3d{position:absolute;left:calc(var(--bw)*-1);top:calc(var(--bh)*-.5);width:calc(var(--bw)*2);height:var(--bh);perspective:calc(var(--bw)*4.2);perspective-origin:50% 20%}
+.bk{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(55deg) rotateY(0deg) rotateZ(-45deg)}
+.bk-in{position:absolute;inset:0;transform-style:preserve-3d}
+.bk .f{position:absolute;top:0;left:var(--bw);width:var(--bw);height:var(--bh);transform-style:preserve-3d;transform-origin:0 50%}
+.bk .pgs{top:calc(var(--bh)*.025);height:calc(var(--bh)*.95);width:calc(var(--bw)*.96)}
+.bk .bk-pl{left:calc(var(--bw)*.04);transform-origin:100% 50%}
+.bk-sh{position:absolute;left:-12%;top:7%;width:124%;height:100%;background:radial-gradient(closest-side,rgba(12,22,64,.5),transparent);transform:translateZ(-2px);transform-origin:75% 50%}
+.bk-cvb{background:linear-gradient(160deg,#1c3182,#0b1540);border-radius:2px 8px 8px 2px;box-shadow:0 0 0 1px rgba(140,185,255,.25),0 0 28px rgba(80,140,255,.35)}
+.bk-spine{position:absolute;left:var(--bw);top:0;width:calc(var(--t) + 6px);height:var(--bh);transform-origin:0 50%;transform:rotateY(-90deg);background:linear-gradient(90deg,#0b1540,#2a44a8 50%,#0b1540);border-radius:3px;opacity:0}
+.bk-pl,.bk-pr{transform:translateZ(var(--t))}
+.bk .pf,.bk-pr{background:linear-gradient(90deg,rgba(18,28,72,.34),rgba(18,28,72,.06) 12%,rgba(255,255,255,0) 30%,rgba(18,28,72,.05) 100%),linear-gradient(#fdfbf6,#f1ebdf);border-radius:1px 4px 4px 1px}
+.bk .pb,.bk-pl{background:linear-gradient(270deg,rgba(18,28,72,.34),rgba(18,28,72,.06) 12%,rgba(255,255,255,0) 30%,rgba(18,28,72,.05) 100%),linear-gradient(#fdfbf6,#f1ebdf);border-radius:4px 1px 1px 4px}
+.bk .pf,.bk .pb,.bk-pl,.bk-pr{box-shadow:inset 0 0 0 .5px rgba(20,30,70,.1),0 0 14px rgba(110,165,255,.25)}
+.bk .pf::before,.bk .pb::before,.bk-pl::before,.bk-pr::before{content:"";position:absolute;left:15%;right:12%;top:21%;bottom:14%;background:repeating-linear-gradient(180deg,rgba(25,38,90,.18) 0 1px,transparent 1px 8%)}
+.bk .pf::after,.bk .pb::after,.bk-pl::after,.bk-pr::after{content:"";position:absolute;left:15%;top:9%;width:44%;height:3.5%;border-radius:2px;background:rgba(49,85,231,.55)}
+.bk-eg{position:absolute;left:0;right:0;top:100%;height:var(--t);transform-origin:50% 0;transform:rotateX(90deg)}
+.bk-er{position:absolute;top:0;bottom:0;left:100%;width:var(--t);transform-origin:0 50%;transform:rotateY(90deg)}
+.bk-el{position:absolute;top:0;bottom:0;right:100%;width:var(--t);transform-origin:100% 50%;transform:rotateY(-90deg)}
+.bk-eg{background:linear-gradient(rgba(20,30,70,.06),rgba(20,30,70,.22)),repeating-linear-gradient(180deg,#f2ebdd 0 1.5px,#c9bea7 1.5px 3px)}
+.bk .bk-ce{height:calc(var(--bw)*.035);background:linear-gradient(#1c3182,#0b1540)}
+.bk-lb{position:absolute;left:calc(var(--bw)*.02);top:var(--bh);width:calc(var(--bw)*.98);height:calc(var(--bw)*.035);transform-origin:50% 0;transform:rotateX(90deg);background:linear-gradient(#1c3182,#0b1540);border-radius:0 0 3px 3px}
+.bk-go .bk-lb{animation:bkFade .3s 2.9s both}
+.bk-er,.bk-el{background:linear-gradient(90deg,rgba(20,30,70,.04),rgba(20,30,70,.18)),repeating-linear-gradient(90deg,#f2ebdd 0 1.5px,#c9bea7 1.5px 3px)}
+.bk .bk-pr{box-shadow:1px 1px 0 #e7dfcf,2px 2px 0 #d9cfbb,3px 3px 0 #e7dfcf,4px 4px 0 #d3c8b2,5px 5px 0 #e2d9c7,0 0 16px rgba(110,165,255,.3)}
+.bk .bk-pl{box-shadow:-1px 1px 0 #e7dfcf,-2px 2px 0 #d9cfbb,-3px 3px 0 #e7dfcf,-4px 4px 0 #d3c8b2,-5px 5px 0 #e2d9c7,0 0 16px rgba(110,165,255,.3)}
+.bk-lf.l1{--z0:calc(var(--t) + 4px);--z1:calc(var(--t) + 1px);--d:2.15s}
+.bk-lf.l2{--z0:calc(var(--t) + 3px);--z1:calc(var(--t) + 2px);--d:2.45s}
+.bk-lf.l3{--z0:calc(var(--t) + 2px);--z1:calc(var(--t) + 3px);--d:2.75s}
+.bk-lf.l4{--z0:calc(var(--t) + 1px)}
+.bk-lf{transform:translateZ(var(--z1)) rotateY(-180deg)}
+.bk-lf.l4{transform:translateZ(var(--z0)) rotateY(-4deg)}
+.bk-lf b,.bk-cv b{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.bk .pb,.bk-cv .cb{transform:rotateY(180deg)}
+.bk-cv{transform:translateZ(0) rotateY(-180deg)}
+.bk-cv .cf{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:calc(var(--bw)*.035);overflow:hidden;border-radius:2px 8px 8px 2px;color:#e3ecff;background:linear-gradient(160deg,#2a43a3 0%,#14245f 48%,#0a1438 100%);box-shadow:inset 0 0 0 1px rgba(150,195,255,.35),inset calc(var(--bw)*.05) 0 calc(var(--bw)*.04) rgba(0,0,0,.28),0 0 26px rgba(80,140,255,.4)}
+.bk-cv .cf::before{content:"";position:absolute;inset:7% 9%;border:1px solid rgba(160,200,255,.45);border-radius:4px}
+.bk-cv .cf::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.16) 48%,transparent 60%)}
+.bk-cv .cf span{font:800 calc(var(--bw)*.12)/1 Manrope,sans-serif;letter-spacing:.22em;padding-left:.22em;text-shadow:0 0 12px rgba(130,180,255,.85)}
+.bk-cv .cf small{font:600 calc(var(--bw)*.045)/1 Manrope,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.bk-cv .cb{border-radius:8px 2px 2px 8px;background:radial-gradient(rgba(150,190,255,.14) 1px,transparent 1.6px) 0 0/calc(var(--bw)*.07) calc(var(--bw)*.07),linear-gradient(160deg,#1a2d78,#0e1a4c);box-shadow:inset 0 0 0 1px rgba(140,185,255,.25),0 0 26px rgba(80,140,255,.35)}
+.bw{position:absolute;left:50%;top:54%;font:800 var(--s,6cqw)/1 Manrope,sans-serif;letter-spacing:.08em;color:var(--wc);text-shadow:0 0 1px #fff,0 0 14px rgba(100,160,255,.9),0 0 34px rgba(130,110,255,.35);white-space:nowrap;opacity:0;transform:translate(-50%,-50%) translate3d(var(--x),var(--y),0) rotate(var(--r))}
+.bw.lt{font-weight:600;letter-spacing:0}
+.bp,.bi{position:absolute;border-radius:50%;background:var(--pc);box-shadow:0 0 8px 2px color-mix(in srgb,var(--pc) 55%,transparent)}
+.bp{left:50%;top:50%;width:4px;height:4px;margin:-2px;opacity:0}
+.bi{width:3px;height:3px;opacity:.65;animation:biF 7s ease-in-out infinite alternate;transition:opacity 1.2s}
+.bk-run:not(.bk-end) .bi{opacity:0}
+.bk-run:not(.bk-go) .bk-scene{visibility:hidden}
+.bk-run:not(.bk-go) .photo,.bk-run:not(.bk-go) .stage .chip{opacity:0}
+.bk-go .bk-move{animation:bkMove 6.6s both}
+.bk-go .bk{animation:bkTilt 6.6s both}
+.bk-go .bk-in{animation:bkShift 1.5s 1.45s cubic-bezier(.45,.05,.3,1) both}
+.bk-go .bk-sh{animation:bkSh 1.5s 1.45s ease-in-out both}
+.bk-go .bk-spine{animation:bkSpine .6s 1.8s both}
+.bk-go .bk-cv{animation:bkCover 1.8s 1.35s cubic-bezier(.45,.05,.3,1) both}
+.bk-go .bk-cv .cf::after{animation:bkSheen 1.3s .5s ease-in-out both}
+.bk-go .bk-pl{animation:bkFade .4s 2.5s both}
+.bk-go .bk-lf{animation:bkLeaf 1.15s var(--d) cubic-bezier(.5,.05,.3,1) both}
+.bk-go .bk-lf.l4{animation:bkFlutter 1.9s 3.05s ease-in-out both}
+.bk-go .bk-glow{animation:bkGlow 6.6s both}
+.bk-go.bk-end .bk-glow{animation:bkPulse 8s ease-in-out infinite}
+.bk-go .bw{animation:bwRise 1.5s var(--d) cubic-bezier(.2,.75,.25,1) both,bwFade 1s var(--f) ease-in forwards}
+.bk-go .bp{animation:bpRise 2.4s var(--d) ease-out both}
+.bk-go .photo{animation:phIn 1.2s 5.4s cubic-bezier(.2,.7,.2,1) both}
+.bk-go .stage .c1{animation:chIn .7s 5.9s both,fl 5s ease-in-out infinite}
+.bk-go .stage .c2{animation:chIn .7s 6.1s both,fl 6s ease-in-out -2s infinite}
+.bk-go .stage .c3{animation:chIn .7s 6.3s both}
+@keyframes bkMove{0%{transform:translate3d(0,115cqw,0) scale(.5);opacity:0;filter:blur(0);animation-timing-function:cubic-bezier(.16,.84,.3,1)}8%{opacity:1}24%{transform:translate3d(0,0,0) scale(1);animation-timing-function:ease-in-out}64%{transform:translate3d(0,-1.5cqw,0) scale(1);filter:blur(0);animation-timing-function:ease-out}71%{transform:translate3d(0,-2.5cqw,0) scale(1.07);opacity:1;filter:blur(0);animation-timing-function:cubic-bezier(.55,0,.25,1)}88%{filter:blur(1.4px)}100%{transform:translate3d(var(--fx),var(--fy),0) scale(var(--fs));opacity:1;filter:blur(0)}}
+@keyframes bkTilt{0%{transform:rotateX(10deg) rotateY(-26deg) rotateZ(-7deg)}24%{transform:rotateX(16deg) rotateY(-12deg) rotateZ(-3deg)}45%{transform:rotateX(34deg) rotateY(0deg) rotateZ(-1deg)}71%{transform:rotateX(32deg) rotateY(0deg) rotateZ(0deg)}100%{transform:rotateX(55deg) rotateY(0deg) rotateZ(-45deg)}}
+@keyframes bkShift{from{transform:translateX(calc(var(--bw)*-.5))}to{transform:translateX(0)}}
+@keyframes bkSh{from{transform:translateZ(-2px) scaleX(.52)}to{transform:translateZ(-2px) scaleX(1)}}
+@keyframes bkSpine{from{opacity:1}to{opacity:0}}
+@keyframes bkCover{0%{transform:translateZ(calc(var(--t) + 6px)) rotateY(0deg)}22%{transform:translateZ(calc(var(--t) + 6px)) rotateY(-18deg)}34%{transform:translateZ(calc(var(--t) + 5px)) rotateY(-24deg)}100%{transform:translateZ(0px) rotateY(-180deg)}}
+@keyframes bkSheen{from{transform:translateX(-110%)}to{transform:translateX(110%)}}
+@keyframes bkFade{from{opacity:0}}
+@keyframes bkLeaf{from{transform:translateZ(var(--z0)) rotateY(0deg)}to{transform:translateZ(var(--z1)) rotateY(-180deg)}}
+@keyframes bkFlutter{0%{transform:translateZ(var(--z0)) rotateY(0deg)}35%{transform:translateZ(var(--z0)) rotateY(-34deg)}65%{transform:translateZ(var(--z0)) rotateY(-9deg)}82%{transform:translateZ(var(--z0)) rotateY(-15deg)}100%{transform:translateZ(var(--z0)) rotateY(-4deg)}}
+@keyframes bkGlow{0%{opacity:0;transform:translate(-50%,-50%) scale(.5)}30%{opacity:.55}50%{opacity:1;transform:translate(-50%,-50%) scale(1)}71%{opacity:1;transform:translate(-50%,-52%) scale(1.06);animation-timing-function:cubic-bezier(.55,0,.25,1)}100%{opacity:.7;transform:translate(calc(-50% + var(--fx)),calc(-50% + var(--fy))) scale(.85)}}
+@keyframes bkPulse{0%,100%{opacity:.7}50%{opacity:.45}}
+@keyframes bwRise{0%{opacity:0;filter:blur(4px);transform:translate(-50%,-50%) translate3d(0,-2cqw,0) scale(.3) rotate(0deg)}35%{opacity:var(--o,1)}60%{filter:blur(0)}100%{opacity:var(--o,1);filter:blur(0);transform:translate(-50%,-50%) translate3d(var(--x),var(--y),0) scale(1) rotate(var(--r))}}
+@keyframes bwFade{to{opacity:0;filter:blur(5px)}}
+@keyframes bpRise{0%{opacity:0;transform:translate3d(var(--x0,0px),0,0) scale(.6)}20%{opacity:1}100%{opacity:0;transform:translate3d(var(--x),var(--y),0) scale(1)}}
+@keyframes phIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+@keyframes chIn{from{opacity:0}}
+@keyframes biF{from{transform:translate3d(0,0,0)}to{transform:translate3d(var(--bx,4px),var(--by,-10px),0)}}
+@media(max-width:860px){.bk-scene .x{display:none}}
+/* benefits */
+.sp{background:var(--gray)}
+.sph{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.ben{display:grid;grid-template-columns:repeat(3,1fr);border-top:1.5px solid var(--ink)}
+.ben div{padding:26px 24px 0 0}.ben div+div{padding-left:24px;border-left:1px solid var(--line)}
+.ben b{font:800 14px Manrope;color:var(--bl);display:block;margin-bottom:10px}.ben h3{margin-bottom:8px}
+.stats{display:flex;gap:clamp(24px,6vw,80px);flex-wrap:wrap;margin-top:56px}
+.stats strong{display:block;font-size:clamp(2.4rem,6vw,4.4rem);letter-spacing:-.04em;line-height:1}.stats span{font-size:13px;color:var(--mut)}
+@media(max-width:760px){.sph{grid-template-columns:1fr}.ben{grid-template-columns:1fr}.ben div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:24px}}
+/* programs */
+.pg{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:50px}
+.pr{padding:30px;border-radius:14px;display:flex;flex-direction:column;gap:14px;min-height:320px;position:relative;overflow:hidden}
+.pr .tag{font:800 12px Manrope;letter-spacing:.16em}
+.pr dl{margin:auto 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px}.pr dt{opacity:.8}.pr dd{margin:0;font-weight:600}
+.p1{grid-column:span 7;background:var(--blue);color:#fff}.p2{grid-column:span 5;background:var(--ink);color:var(--bg)}
+.p3{grid-column:span 5;background:var(--lime);color:#191919}.p4{grid-column:span 7;background:var(--gray);box-shadow:inset 0 0 0 1px var(--line)}
+.pr .big{position:absolute;right:-8px;top:-18px;font:800 130px/1 Manrope;opacity:.12;letter-spacing:-.06em}
+.pr .link{align-self:flex-start;border-color:currentColor}
+@media(max-width:860px){.pr{grid-column:1/-1!important;min-height:0}}
+/* method */
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);margin-top:50px}
+.pri{list-style:none;margin:0;padding:0;counter-reset:n}
+.pri li{counter-increment:n;padding:22px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:56px 1fr;gap:6px}
+.pri li::before{content:"0" counter(n);font:800 14px Manrope;color:var(--bl);padding-top:8px;grid-row:span 2}
+.pri h3{font-size:1.5rem}
+.lesson{background:var(--bg);border-radius:14px;padding:28px;align-self:start;box-shadow:inset 0 0 0 1px var(--line)}
+.lesson-ph{width:calc(100% + 56px);max-width:none;margin:-28px -28px 22px;aspect-ratio:16/8;object-fit:cover;border-radius:14px 14px 0 0;background:var(--gray)}
+.lesson h3{margin-bottom:18px}.lesson div{padding:14px 0;border-top:1px solid var(--line)}
+.lesson small{display:block;font:800 11px Manrope;letter-spacing:.16em;color:var(--bl);margin-bottom:4px}
+.fb{background:var(--lime);color:#191919;border-radius:10px;padding:14px!important;border:0!important;margin-top:8px}.fb small{color:#191919!important}
+@media(max-width:860px){.mg{grid-template-columns:1fr}}
+/* teachers */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);margin-top:50px;align-items:start}
+.tg article:nth-child(2){margin-top:48px}
+.av{aspect-ratio:3/4;border-radius:14px;position:relative;overflow:hidden;margin-bottom:18px}
+.av img{width:100%;height:100%;object-fit:cover;object-position:center 25%;transition:transform .6s}
+.tg article:hover .av img{transform:scale(1.04)}
+.av span{position:absolute;left:12px;bottom:12px;background:var(--lime);color:#191919;font:800 12px Manrope;padding:6px 10px;border-radius:99px}
+.tg .role{font:800 12px Manrope;letter-spacing:.14em;color:var(--bl);text-transform:uppercase;margin:6px 0 10px}
+@media(max-width:860px){.tg{grid-template-columns:1fr}.tg article:nth-child(2){margin-top:0}.av{aspect-ratio:4/3}}
+/* steps: путь с «бегущим» светом */
+.lm{background:var(--lime);color:#191919;--ink:#191919;--mut:#33332e;--line:#19191940;--bl:#3155E7}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);margin-top:60px;position:relative}
+.trk{position:absolute;left:22px;top:21px;width:75%;height:2px;background:repeating-linear-gradient(90deg,#19191940 0 8px,transparent 8px 14px)}
+.fill{position:absolute;left:0;top:-1px;height:4px;width:0;border-radius:4px;background:repeating-linear-gradient(90deg,#3155E7 0 8px,transparent 8px 14px);filter:drop-shadow(0 0 3px #fff) drop-shadow(0 0 6px #3155E7);transition:width .9s cubic-bezier(.45,0,.3,1),height .9s cubic-bezier(.45,0,.3,1)}
+.fill::after{content:"";position:absolute;right:-7px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #3155E7,0 0 18px 6px #3155E7,0 0 40px 12px #ffffffaa;opacity:0;transition:opacity .25s}
+.trk.go .fill::after{opacity:1}
+.st{position:relative;padding-right:24px}
+.st i{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font:800 16px Manrope;font-style:normal;margin-bottom:22px;position:relative;z-index:1;transition:background .35s,color .35s,box-shadow .35s}
+.st:last-child i{background:#191919;color:var(--lime)}
+.st h3{font-size:1.15rem;margin-bottom:6px}
+.st h3,.st p{transition:opacity .5s,transform .5s}
+.sg.anim .st:not(.on) i{background:var(--lime);color:#19191980;box-shadow:inset 0 0 0 2px #19191940}
+.sg.anim .st:not(.on) h3,.sg.anim .st:not(.on) p{opacity:.35;transform:translateY(6px)}
+.sg.anim .st.on i{animation:pop .6s cubic-bezier(.3,1.6,.5,1),glow 1.6s ease-out .1s;box-shadow:0 0 0 4px #ffffff99,0 0 22px #3155E799}
+.sg.anim .st.on:last-child i{box-shadow:0 0 0 4px #ffffff99,0 0 26px #191919aa}
+@keyframes pop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+@keyframes glow{0%{box-shadow:0 0 0 0 #3155E7cc,0 0 22px #3155E799}100%{box-shadow:0 0 0 22px #3155E700,0 0 22px #3155E799}}
+.sg.v .trk{left:21px;top:22px;width:2px;height:0;background:repeating-linear-gradient(180deg,#19191940 0 8px,transparent 8px 14px)}
+.sg.v .fill{left:-1px;top:0;width:4px;height:0;background:repeating-linear-gradient(180deg,#3155E7 0 8px,transparent 8px 14px)}
+.sg.v .fill::after{right:auto;left:50%;top:auto;bottom:-7px;margin:0 0 0 -7px}
+@media(max-width:860px){.sg{grid-template-columns:1fr;gap:30px}.st{padding:0 0 0 66px;min-height:44px}.st i{position:absolute;left:0;top:0;margin:0}}
+/* reviews */
+.rv{background:var(--ink);color:var(--bg)}.rv .eyebrow{color:var(--lime)}
+.badge{display:inline-block;background:var(--lime);color:#191919;font:800 12px Manrope;padding:6px 12px;border-radius:99px;margin-top:20px}
+.rg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:50px}
+.rg blockquote{margin:0;border-top:1px solid color-mix(in srgb,var(--bg) 25%,transparent);padding-top:22px}
+.rg blockquote:first-child p{font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.3;font-weight:600;letter-spacing:-.01em}
+.rg cite{display:block;font-style:normal;margin-top:18px;font-size:14px;opacity:.75}.rg cite b{display:block;opacity:1;color:var(--lime)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .rv{background:#0b0b0a;color:#F3F1EA}}
+@media(max-width:860px){.rg{grid-template-columns:1fr}}
+/* pricing */
+.pl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:50px;align-items:stretch}
+.pc{padding:32px;border-radius:14px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:16px}
+.pc.pro{background:var(--blue);color:#fff;box-shadow:none}
+.pc .pn{font:800 13px Manrope;letter-spacing:.18em}.pc .pp{font:800 clamp(2rem,4vw,2.8rem)/1 Manrope;letter-spacing:-.04em}.pc .pp small{font-size:15px;font-weight:600;letter-spacing:0;opacity:.7}
+.pc .per{font-size:13px;opacity:.75;margin-top:-8px}
+.pc ul{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:10px;font-size:15px}.pc li{padding-left:24px;position:relative}.pc li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:6px;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg) translateY(-3px)}
+.pc .btn{margin-top:auto}.pc.pro .btn{background:var(--lime);color:#191919}
+.pr,.pc{transition:opacity .7s,transform .3s,box-shadow .25s}.pr:hover,.pc:hover{transform:translateY(-4px)}
+@media(max-width:860px){.pl{grid-template-columns:1fr}}
+.disc{font-size:13px;color:var(--mut);margin-top:22px}
+/* faq */
+.fq{max-width:860px;margin-top:44px;border-top:1.5px solid var(--ink)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-weight:800;font-size:1.15rem;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:28px;font-weight:400;color:var(--bl);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 40px 24px 0;color:var(--mut)}
+summary:hover{color:var(--bl)}
+/* next level (финальный CTA) */
+.nx{padding-bottom:clamp(40px,6vw,70px)}
+.nx-card{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,56px);background:var(--blue);color:#fff;border-radius:28px;padding:clamp(26px,5vw,64px);overflow:hidden;isolation:isolate}
+.nx-card::before{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-200px;border-radius:50%;background:radial-gradient(circle,#D9F36A55,transparent 65%);z-index:-1}
+.nx .eyebrow{color:var(--lime)}
+.nx h2{color:#fff}
+.nx-lead{margin:20px 0 28px;font-size:1.1rem;max-width:30em;opacity:.9}
+.nx-plan{list-style:none;margin:0 0 32px;padding:0;border-top:1px solid #ffffff40}
+.nx-plan li{display:grid;grid-template-columns:86px 1fr;gap:4px 16px;padding:16px 0;border-bottom:1px solid #ffffff40}
+.nx-plan time{font:800 13px Manrope;letter-spacing:.06em;color:var(--lime);padding-top:3px;grid-row:span 2}
+.nx-plan b{font-size:1.1rem}.nx-plan span{font-size:15px;opacity:.8}
+.nx .acts .link{color:#fff;border-color:var(--lime)}.nx .acts .link:hover{color:var(--lime)}
+.nx-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.nx-meta span{font-size:13px;font-weight:600;padding:6px 12px;border-radius:99px;box-shadow:inset 0 0 0 1px #ffffff55}
+.nx-ph{position:relative;margin:0;min-height:420px}
+.nx-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 80%;border-radius:220px 220px 18px 18px;background:#2443c9}
+.nx-ph .chip{animation:fl 6s ease-in-out infinite}
+.nx-ph .k1{left:-18px;top:44%;background:var(--lime);color:#191919}
+.nx-ph .k2{right:-10px;bottom:10%;background:#fff;color:#191919;animation-delay:-3s}
+.nx-ph .k2 small{display:block;font-weight:600;font-size:12px;color:#47473f}
+.mq{overflow:hidden;margin-top:clamp(28px,4vw,48px);white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-t{display:inline-flex;gap:0;animation:mq 38s linear infinite;font:800 clamp(1.8rem,4.5vw,3.4rem)/1.2 Manrope,sans-serif;letter-spacing:-.03em}
+.mq-t span{padding:0 .5em}.mq-t span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.mq-t i{font-style:normal;color:var(--bl)}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(max-width:860px){.nx-card{grid-template-columns:1fr}.nx-ph{min-height:0;aspect-ratio:4/3;order:-1}.nx-ph img{border-radius:18px}.nx-ph .k1{left:10px;top:10px}.nx-ph .k2{display:none}}
+@media(max-width:480px){.nx-plan li{grid-template-columns:1fr}.nx-plan time{grid-row:auto}}
+/* footer */
+footer{padding:60px 0 40px;border-top:1px solid var(--line)}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;font-size:15px}
+.fg .fh{margin:0 0 12px;font:800 12px Manrope;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.fg ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.fg a{text-decoration:none}.fg a:hover{color:var(--bl)}
+.copy{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+@media(max-width:760px){.fg{grid-template-columns:1fr 1fr}.fg>:first-child{grid-column:1/-1}}
+/* dialog */
+dialog{border:0;border-radius:16px;padding:0;width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);background:var(--bg);color:var(--ink)}
+dialog::backdrop{background:#000a;backdrop-filter:blur(3px)}
+html:has(dialog[open]){overflow:hidden}
+.dlg{padding:clamp(22px,4vw,36px)}
+.x{position:absolute;right:10px;top:10px;width:44px;height:44px;border:0;background:none;font-size:28px;cursor:pointer;color:var(--ink)}
+form{display:grid;gap:16px;margin-top:20px}
+label{font-weight:800;font-size:14px;display:grid;gap:6px}
+input,select{font:inherit;font-weight:400;min-height:50px;padding:0 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--gray);color:var(--ink);width:100%}
+input:focus,select:focus{outline:3px solid var(--bl);outline-offset:1px;border-color:var(--bl)}
+.chk{display:grid;grid-template-columns:22px 1fr;align-items:start;gap:4px 10px;font-weight:600;font-size:13px;color:var(--mut);cursor:pointer}
+.chk input{width:20px;height:20px;min-height:0;padding:0;margin:1px 0 0;accent-color:var(--blue)}
+.chk .err{grid-column:2}
+.err{color:#c4281c;font-weight:600;font-size:13px;min-height:0}
+@media(prefers-color-scheme:dark){.err{color:#ff8a80}}
+[aria-invalid=true]{border-color:#c4281c}
+.res{padding:14px;border-radius:10px;background:var(--lime);color:#191919;font-weight:600;font-size:15px}
+.res[hidden]{display:none}
+.rev{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rev.in{opacity:1;transform:none}
+.skip{position:absolute;left:-999px;top:0}.skip:focus{left:12px;top:12px;z-index:50;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:8px}
+@media(max-width:480px){.chip{font-size:12px;padding:8px 10px}.c1{top:17%}.c2{top:2%}.btn{padding:0 20px;font-size:15px}}
+/* quiz */
+.qz{padding:clamp(40px,6vw,80px) 0}.qz-box{border:1.5px solid var(--ink);border-radius:14px;padding:clamp(22px,5vw,56px)}.qz-box p{max-width:38em}.qz-intro h2{margin-bottom:14px}.qz-intro .btn{margin-top:24px}.qz-n{font-size:13px;color:var(--mut);margin-top:16px}.qz-top{display:flex;justify-content:space-between;font-weight:800;font-size:14px;margin-bottom:10px}.qz-bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden}.qz-bar b{display:block;height:100%;width:0;background:var(--bl);transition:width .35s}.qz-f{border:0;padding:0;margin:28px 0 0;min-width:0}.qz-q{font:800 clamp(1.3rem,3vw,1.9rem)/1.25 Manrope,sans-serif;letter-spacing:-.02em;padding:0;margin-bottom:20px}.qz-g{display:grid;grid-template-columns:1fr 1fr;gap:12px}.qz-o{position:relative;display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 16px;border-radius:10px;background:var(--gray);box-shadow:inset 0 0 0 1.5px var(--line);cursor:pointer;font-size:16px;font-weight:600;transition:background .2s,box-shadow .2s,color .2s}.qz-o:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}.qz-o input{position:absolute;inset:0;opacity:0;margin:0;padding:0;min-height:0;height:100%;width:100%;border:0;cursor:pointer}.qz-o.on{background:var(--blue);color:#fff;box-shadow:none}.qz-o:focus-within{outline:3px solid var(--bl);outline-offset:2px}.qz-k{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px currentColor;font-size:13px}.qz-in{animation:qzf .3s ease}@keyframes qzf{from{opacity:0;transform:translateY(8px)}}.qz-nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px}.qz .btn[disabled]{opacity:.4;cursor:not-allowed}.qz-lv{font:800 clamp(4.5rem,14vw,8rem)/1 Manrope,sans-serif;letter-spacing:-.05em;color:var(--bl);margin:6px 0 14px}.qz-acts{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center;margin-top:26px}.qz-res p{margin-bottom:10px}@media(max-width:640px){.qz-g{grid-template-columns:1fr}}
+/* sticky mobile CTA */
+.stk{display:none}
+@media(max-width:860px){.stk{display:inline-flex;position:fixed;left:16px;right:16px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:15;box-shadow:0 6px 20px #0003;transition:transform .35s,opacity .35s}.stk.hide{transform:translateY(160%);opacity:0;pointer-events:none}body{padding-bottom:84px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.rev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">К содержимому</a>
+<header><div class="w hb">
+<a class="logo" href="#top" aria-label="LINGUA — на главную">LING<i>U</i>A</a>
+<nav id="nav" aria-label="Основная навигация"><ul>
+<li><a href="#programs">Программы</a></li><li><a href="#test">Тест уровня</a></li><li><a href="#method">Методика</a></li><li><a href="#teachers">Преподаватели</a></li><li><a href="#pricing">Тарифы</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+<button class="btn hcta" data-open>Пробный урок</button>
+<button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="w hg">
+<div>
+<span class="eyebrow">Online English School</span>
+<h1>Английский, который <em>открывает двери</em></h1>
+<p class="sub">Говори уверенно и используй английский в жизни и карьере. Индивидуальный план и практика речи на каждом занятии.</p>
+<div class="acts"><button class="btn" data-open>Записаться на пробный урок</button><a class="btn ghost" href="#test">Узнать свой уровень <span class="ar" aria-hidden="true">→</span></a></div>
+<ul class="tr"><li>Бесплатный пробный урок</li><li>Индивидуальный план</li><li>Занятия онлайн</li></ul>
+</div>
+<div class="stage" aria-label="Иллюстрация: раскрытая книга LINGUA">
+<div class="bk-scene" aria-hidden="true">
+<div class="bk-glow"></div>
+<div class="bk-move"><div class="bk-3d"><div class="bk"><div class="bk-in">
+<div class="bk-sh"></div>
+<div class="bk-cvb f"><i class="bk-eg bk-ce"></i></div>
+<i class="bk-lb"></i>
+<div class="bk-spine"></div>
+<div class="bk-pl f pgs"><i class="bk-el"></i><i class="bk-eg"></i></div>
+<div class="bk-pr f pgs"><i class="bk-er"></i><i class="bk-eg"></i></div>
+<div class="bk-lf f pgs l4"><b class="pf"></b><b class="pb"></b></div>
+<div class="bk-lf f pgs l3"><b class="pf"></b><b class="pb"></b></div>
+<div class="bk-lf f pgs l2"><b class="pf"></b><b class="pb"></b></div>
+<div class="bk-lf f pgs l1"><b class="pf"></b><b class="pb"></b></div>
+<div class="bk-cv f"><b class="cf"><span>LINGUA</span><small>English for real life</small></b><b class="cb"></b></div>
+</div></div></div></div>
+<span class="bw" style="--x:-16cqw;--y:-58cqw;--r:-5deg;--s:8.5cqw;--d:3s;--f:4.5s">HELLO</span>
+<span class="bw" style="--x:22cqw;--y:-48cqw;--r:4deg;--s:6.5cqw;--d:3.3s;--f:4.6s">LEARN</span>
+<span class="bw" style="--x:-22cqw;--y:-37cqw;--r:3deg;--s:7cqw;--d:3.6s;--f:4.7s">SPEAK</span>
+<span class="bw" style="--x:18cqw;--y:-32cqw;--r:-3deg;--s:5.5cqw;--d:3.9s;--f:4.8s">EXPLORE</span>
+<span class="bw lt" style="--x:-38cqw;--y:-24cqw;--r:-12deg;--s:4.5cqw;--o:.6;--d:3.2s;--f:4.55s">Aa</span>
+<span class="bw lt" style="--x:36cqw;--y:-20cqw;--r:10deg;--s:4cqw;--o:.55;--d:3.5s;--f:4.65s">abc</span>
+<span class="bw lt" style="--x:4cqw;--y:-64cqw;--r:8deg;--s:4cqw;--o:.5;--d:3.75s;--f:4.75s">Z</span>
+<i class="bp" style="--x:-14cqw;--y:-44cqw;--d:2.6s"></i><i class="bp" style="--x:10cqw;--y:-52cqw;--d:2.8s"></i>
+<i class="bp" style="--x:-4cqw;--y:-38cqw;--x0:-6cqw;--d:3s"></i><i class="bp" style="--x:20cqw;--y:-34cqw;--x0:8cqw;--d:3.25s"></i>
+<i class="bp" style="--x:-24cqw;--y:-30cqw;--x0:-10cqw;--d:3.5s"></i><i class="bp" style="--x:6cqw;--y:-60cqw;--d:3.7s"></i>
+<i class="bp x" style="--x:-8cqw;--y:-56cqw;--x0:4cqw;--d:2.9s"></i><i class="bp x" style="--x:28cqw;--y:-44cqw;--x0:10cqw;--d:3.4s"></i>
+<i class="bp x" style="--x:-30cqw;--y:-48cqw;--x0:-12cqw;--d:3.9s"></i><i class="bp x" style="--x:14cqw;--y:-26cqw;--x0:6cqw;--d:4.1s"></i>
+<i class="bi" style="left:18%;top:30%;--bx:3px;--by:-8px"></i><i class="bi" style="left:84%;top:26%;--bx:-4px;--by:-12px;animation-delay:-3s"></i><i class="bi x" style="left:72%;top:74%;--bx:5px;--by:-6px;animation-delay:-5s"></i>
+</div>
+<div class="chip c1">“Nice to meet you!”</div>
+<div class="chip c2">Lesson 04 · Speaking<small>Live · 50 минут</small><div class="bar"><b></b></div></div>
+<div class="chip c3">От первого занятия до уверенного общения<small>Демо-рейтинг 4,9 · 1 200+ учеников</small></div>
+</div></div></section>
+
+<section class="sp" id="why"><div class="w">
+<div class="sph rev"><div><span class="eyebrow">Why Lingua</span><h2>Английский для твоих следующих возможностей</h2></div><p class="mut">Мы не обещаем гарантированный результат, но выстраиваем занятия так, чтобы речь и уверенность росли шаг за шагом.</p></div>
+<div class="ben rev">
+<div><b>01</b><h3>Практика речи</h3><p class="mut">Говоришь на каждом занятии, а не только слушаешь объяснения.</p></div>
+<div><b>02</b><h3>Под твои цели</h3><p class="mut">Программа строится от твоего уровня и задачи: работа, переезд, экзамен.</p></div>
+<div><b>03</b><h3>Понятный прогресс</h3><p class="mut">Видишь план, цели и то, что уже получается.</p></div></div>
+<div class="stats rev"><div><strong>4,9</strong><span>демо-рейтинг</span></div><div><strong>1 200+</strong><span>демо-число учеников</span></div><div><strong>50 мин</strong><span>длительность урока</span></div></div>
+<p class="disc">Цифры выше демонстрационные и не подтверждены.</p>
+</div></section>
+
+<section id="programs"><div class="w">
+<span class="eyebrow">Programs</span><h2 class="rev">Найди свой английский</h2>
+<div class="pg">
+<article class="pr p1 rev"><span class="big" aria-hidden="true">01</span><span class="tag">SPEAKING CLUB</span><h3>Разговорный английский</h3><p>Для тех, кто хочет свободнее общаться и перестать бояться ошибок.</p><dl><dt>Уровень</dt><dd>A2–C1</dd><dt>Формат</dt><dd>мини-группа, диалоги и дискуссии</dd></dl><button class="link" data-open data-goal="speaking">Записаться на пробный</button></article>
+<article class="pr p2 rev"><span class="big" aria-hidden="true">02</span><span class="tag">ENGLISH FOR WORK</span><h3>Английский для карьеры</h3><p>Переговоры, собеседования, презентации и деловая переписка.</p><dl><dt>Уровень</dt><dd>B1–C1</dd><dt>Формат</dt><dd>индивидуально, ролевые кейсы</dd></dl><button class="link" data-open data-goal="work">Записаться на пробный</button></article>
+<article class="pr p3 rev"><span class="big" aria-hidden="true">03</span><span class="tag">EVERYDAY ENGLISH</span><h3>Английский на каждый день</h3><p>Общение, путешествия, фильмы и повседневные ситуации.</p><dl><dt>Уровень</dt><dd>A1–B1</dd><dt>Формат</dt><dd>индивидуально или в паре</dd></dl><button class="link" data-open data-goal="everyday">Записаться на пробный</button></article>
+<article class="pr p4 rev"><span class="big" aria-hidden="true">04</span><span class="tag">IELTS PREPARATION</span><h3>Подготовка к экзамену</h3><p>Стратегии выполнения заданий, практика и разбор ошибок.</p><dl><dt>Уровень</dt><dd>от B1</dd><dt>Формат</dt><dd>индивидуально, пробные тесты</dd></dl><button class="link" data-open data-goal="ielts">Записаться на пробный</button></article>
+</div></div></section>
+
+<section class="qz" id="test" aria-labelledby="qzt"><div class="w"><div class="qz-box">
+<div class="qz-intro" id="qzI"><span class="eyebrow">Level test</span><h2 id="qzt">Узнай свой уровень английского</h2><p class="mut">Ответь на несколько вопросов и узнай свой примерный уровень английского.</p><button class="btn" id="qzGo">Пройти тест</button><p class="qz-n">12 вопросов · около 5 минут · проверяет грамматику и лексику</p></div>
+<div id="qzR" hidden><div class="qz-top"><span id="qzC"></span><span>A1 → B2</span></div><div class="qz-bar" role="progressbar" aria-label="Прогресс теста" id="qzP" aria-valuemin="0" aria-valuemax="12"><b id="qzB"></b></div>
+<fieldset class="qz-f" id="qzF"><legend class="qz-q" id="qzL"></legend><div class="qz-g" id="qzO"></div></fieldset>
+<div class="qz-nav"><button class="btn ghost" id="qzBk">Назад</button><button class="btn" id="qzN">Далее</button></div></div>
+<div class="qz-res" id="qzRes" hidden aria-live="polite"><span class="eyebrow">Ваш результат</span><div class="qz-lv" id="qzLv" tabindex="-1"></div><p><b id="qzSc"></b> — <span id="qzNm"></span></p><p id="qzTx"></p><p id="qzRc"></p><p class="qz-n">Тест оценивает только грамматику и лексику и не заменяет проверку речи, аудирования и письма: это уточним на пробном уроке.</p><div class="qz-acts"><button class="btn" id="qzCta" data-open>Записаться на пробный урок</button><a class="link" href="#programs">Подобрать программу обучения →</a><button class="link" id="qzAg">Пройти ещё раз</button></div></div>
+</div></div></section>
+
+<section class="sp" id="method"><div class="w">
+<span class="eyebrow">Method</span><h2 class="rev">Меньше зубрёжки. Больше настоящего английского</h2>
+<div class="mg">
+<ol class="pri rev"><li><h3>Говорим с первых занятий</h3><p class="mut">Даже на базовом уровне — короткими фразами.</p></li>
+<li><h3>Реальные ситуации</h3><p class="mut">Кафе, звонок, интервью, встреча: учим то, что пригодится.</p></li>
+<li><h3>Обратная связь</h3><p class="mut">Преподаватель разбирает ошибки и показывает, что улучшить.</p></li>
+<li><h3>Понятные цели</h3><p class="mut">Прогресс отслеживается по конкретным шагам.</p></li></ol>
+<div class="lesson rev"><img class="lesson-ph" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=900&h=450&fit=crop&q=70&auto=format" width="900" height="450" loading="lazy" alt="Ученик в наушниках на онлайн-уроке за ноутбуком"><span class="eyebrow">Пример занятия · демо</span><h3>Как проходит урок</h3>
+<div><small>ТЕМА</small>Job interview: tell me about yourself</div>
+<div><small>ЗАДАНИЕ</small>Подготовить и произнести ответ на 60 секунд, затем ответить на два уточняющих вопроса.</div>
+<div class="fb"><small>ОБРАТНАЯ СВЯЗЬ</small>Структура ясная. Следим за временами: «I work here since 2020» → «I have worked here since 2020».</div></div>
+</div></div></section>
+
+<section id="teachers"><div class="w">
+<span class="eyebrow">Teachers</span><h2 class="rev">Люди, с которыми английский становится ближе</h2>
+<p class="disc">Имена и биографии условные, фото — стоковые (Unsplash): это макет, а не реальные преподаватели школы.</p>
+<div class="tg">
+<article class="rev"><div class="av" style="background:#D9F36A"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop&crop=faces&q=70&auto=format" width="600" height="800" loading="lazy" alt="Портрет преподавательницы Анны"><span>Speaking</span></div><h3>Анна Вейс</h3><p class="role">Speaking · Everyday</p><p class="mut">Превращает урок в живой разговор: мало теории, много диалогов и мягкая работа над ошибками.</p></article>
+<article class="rev"><div class="av" style="background:#3155E7"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=800&fit=crop&crop=faces&q=70&auto=format" width="600" height="800" loading="lazy" alt="Портрет преподавателя Михаила"><span>Business</span></div><h3>Михаил Орлов</h3><p class="role">English for Work</p><p class="mut">Строит занятия на рабочих кейсах: письма, переговоры, презентации. Любит чёткие структуры.</p></article>
+<article class="rev"><div class="av" style="background:#ECEBE5"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&crop=faces&q=70&auto=format" width="600" height="800" loading="lazy" alt="Портрет преподавательницы Елены"><span>IELTS</span></div><h3>Елена Строкова</h3><p class="role">IELTS · Exam prep</p><p class="mut">Спокойно объясняет формат экзамена, тренирует тайминг и разбирает каждое письменное задание.</p></article>
+</div></div></section>
+
+<section class="sp lm" id="how"><div class="w">
+<span class="eyebrow">How it works</span><h2 class="rev">Твой путь к уверенному английскому</h2>
+<div class="sg" id="steps">
+<div class="trk" aria-hidden="true"><b class="fill"></b></div>
+<div class="st"><i>1</i><h3>Оставляешь заявку</h3><p class="mut">Заполняешь короткую форму.</p></div>
+<div class="st"><i>2</i><h3>Определяем уровень и цели</h3><p class="mut">Знакомимся и выясняем, что нужно именно тебе.</p></div>
+<div class="st"><i>3</i><h3>Подбираем программу</h3><p class="mut">Формат, темп и преподаватель.</p></div>
+<div class="st"><i>4</i><h3>Занимаешься и растёшь</h3><p class="mut">Следишь за прогрессом по целям.</p></div></div>
+</div></section>
+
+<section class="rv" id="reviews"><div class="w">
+<span class="eyebrow">Reviews</span><h2 class="rev">Когда английский начинает работать на тебя</h2>
+<span class="badge">Демо-отзывы — вымышленные, не реальные</span>
+<div class="rg">
+<blockquote class="rev"><p>«Раньше я молчал на созвонах. Через несколько месяцев провёл первую презентацию для команды на английском».</p><cite><b>Дмитрий, 29</b>Цель: английский для работы</cite></blockquote>
+<blockquote class="rev"><p>«Готовилась к IELTS: разбор эссе помог понять, где я теряю баллы».</p><cite><b>Алина, 22</b>Цель: IELTS для магистратуры</cite></blockquote>
+<blockquote class="rev"><p>«Хотела спокойно общаться в поездках. Теперь заказываю и спрашиваю дорогу без паники».</p><cite><b>Ольга, 34</b>Цель: путешествия</cite></blockquote>
+</div></div></section>
+
+<section id="pricing"><div class="w">
+<span class="eyebrow">Plans</span><h2 class="rev">Выбери комфортный формат</h2>
+<div class="pl">
+<article class="pc rev"><span class="pn">START</span><div class="pp">5 900 ₽<small> /месяц</small></div><p class="per">≈ 1 475 ₽ за урок</p><ul><li>4 индивидуальных занятия в месяц</li><li>Персональный учебный план</li><li>Обратная связь преподавателя</li></ul><button class="btn ghost" data-open data-plan="START">Выбрать START</button></article>
+<article class="pc pro rev"><span class="pn">PRO · РЕКОМЕНДУЕМЫЙ</span><div class="pp">10 900 ₽<small> /месяц</small></div><p class="per">≈ 1 360 ₽ за урок</p><ul><li>8 индивидуальных занятий в месяц</li><li>Персональный учебный план</li><li>Домашние задания и разбор ошибок</li><li>Отслеживание прогресса</li></ul><button class="btn" data-open data-plan="PRO">Выбрать PRO</button></article>
+<article class="pc rev"><span class="pn">INTENSIVE</span><div class="pp">15 900 ₽<small> /месяц</small></div><p class="per">≈ 1 325 ₽ за урок</p><ul><li>12 индивидуальных занятий в месяц</li><li>Приоритетное планирование занятий</li><li>Дополнительная разговорная практика</li><li>Подробная обратная связь</li></ul><button class="btn ghost" data-open data-plan="INTENSIVE">Выбрать INTENSIVE</button></article>
+</div>
+<p class="disc">Цены демонстрационные, для портфолио, и не являются реальными коммерческими условиями. Оплата на сайте не подключена.</p>
+</div></section>
+
+<section class="sp" id="faq"><div class="w">
+<span class="eyebrow">FAQ</span><h2 class="rev">Частые вопросы</h2>
+<div class="fq">
+<details name="f" open><summary>Как определить свой уровень английского?</summary><p>Пройдите <a href="#test">быстрый тест</a> на сайте, а на пробном уроке преподаватель задаст вопросы и предложит короткие задания на речь и понимание. Так вы получите ориентир по уровню и целям.</p></details>
+<details name="f"><summary>Можно ли заниматься с нуля?</summary><p>Да. Для начинающих занятия строятся на простых фразах и повседневных ситуациях, в комфортном темпе.</p></details>
+<details name="f"><summary>Как проходят онлайн-занятия?</summary><p>Это видеоурок с преподавателем: разговорная практика, задания по теме и обратная связь. Нужны интернет, наушники и компьютер или телефон.</p></details>
+<details name="f"><summary>Что делать, если я пропущу урок?</summary><p>Предупредите преподавателя заранее: порядок переноса зависит от условий выбранного тарифа, их уточнят перед стартом.</p></details>
+<details name="f"><summary>Как выбрать подходящую программу?</summary><p>Ориентируйтесь на цель: разговор, работа, повседневное общение или экзамен. Если сомневаетесь, обсудим это на пробном уроке.</p></details>
+<details name="f"><summary>Можно ли сменить преподавателя?</summary><p>Да, если стиль занятий вам не подходит, можно попросить подобрать другого преподавателя.</p></details>
+</div></div></section>
+
+<section class="nx" id="start" aria-labelledby="nxt"><div class="w">
+<div class="nx-card rev">
+<div>
+<span class="eyebrow">Free trial · 50 минут</span>
+<h2 id="nxt">Твой следующий уровень начинается с одного урока</h2>
+<p class="nx-lead">Пробный урок — это не продажа, а знакомство. Вот что произойдёт за 50 минут:</p>
+<ol class="nx-plan">
+<li><time>00–10</time><b>Знакомство</b><span>Расскажешь о целях, мы — о том, как устроены занятия.</span></li>
+<li><time>10–35</time><b>Живая диагностика</b><span>Говорим, слушаем, решаем задания — без стресса и оценок.</span></li>
+<li><time>35–50</time><b>Твой план</b><span>Уровень, цели и подходящий формат — забираешь с собой.</span></li>
+</ol>
+<div class="acts"><button class="btn lime" data-open>Записаться на пробный урок</button><a class="btn ghost" href="#test">Сначала узнать уровень <span class="ar" aria-hidden="true">→</span></a></div>
+<div class="nx-meta"><span>Бесплатно</span><span>Без обязательств</span><span>Онлайн из любой точки</span></div>
+</div>
+<figure class="nx-ph"><img src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b?w=800&h=950&fit=crop&crop=bottom&q=70&auto=format" width="800" height="1000" loading="lazy" alt="Девушка радуется успеху перед ноутбуком">
+<div class="chip k1">“I did it!”</div>
+<div class="chip k2">Урок 1 → уровень выше<small>Первый шаг — самый важный</small></div>
+</figure>
+</div></div>
+<div class="mq" aria-hidden="true"><div class="mq-t"><span>Let’s get started</span><i>✦</i><span>Speak with confidence</span><i>✦</i><span>Ready when you are</span><i>✦</i><span>English for real life</span><i>✦</i><span>Let’s get started</span><i>✦</i><span>Speak with confidence</span><i>✦</i><span>Ready when you are</span><i>✦</i><span>English for real life</span><i>✦</i></div></div>
+</section>
+</main>
+
+<footer><div class="w">
+<div class="fg">
+<div><a class="logo" href="#top">LING<i>U</i>A</a><p class="mut" style="margin-top:12px;max-width:22em">Онлайн-школа английского. Демонстрационный сайт для портфолио.</p></div>
+<div><p class="fh">Разделы</p><ul><li><a href="#programs">Программы</a></li><li><a href="#test">Тест уровня</a></li><li><a href="#method">Методика</a></li><li><a href="#teachers">Преподаватели</a></li><li><a href="#reviews">Отзывы</a></li></ul></div>
+<div><p class="fh">Контакты</p><ul class="mut"><li>+7 (000) 000-00-00</li><li>hello@lingua.example</li><li>Онлайн · пн–вс, 8:00–22:00</li></ul></div>
+<div><p class="fh">Соцсети и документы</p><ul class="mut"><li>Telegram · VK · YouTube</li><li>Политика конфиденциальности</li><li>Согласие на обработку данных</li></ul></div>
+</div>
+<p class="copy">© 2026 LINGUA. Демонстрационный проект: контакты, цены и отзывы условные. Фото — Unsplash.</p>
+</div></footer>
+
+<button class="btn stk" data-open>Записаться на пробный урок</button>
+<dialog id="dlg" aria-labelledby="dt"><div class="dlg">
+<button class="x" id="close" aria-label="Закрыть">×</button>
+<span class="eyebrow">Trial lesson</span><h2 id="dt" style="font-size:2rem">Пробный урок</h2>
+<form id="f" novalidate>
+<label>Имя<input name="name" autocomplete="given-name" required aria-describedby="e1"><span class="err" id="e1"></span></label>
+<label>Телефон, email или @telegram<input name="contact" autocomplete="off" required aria-describedby="e2"><span class="err" id="e2"></span></label>
+<label>Цель обучения<select name="goal" required aria-describedby="e3"><option value="">Выберите цель</option><option value="speaking">Разговорный английский</option><option value="work">Английский для карьеры</option><option value="everyday">Английский на каждый день</option><option value="ielts">Подготовка к IELTS</option></select><span class="err" id="e3"></span></label>
+<label>Удобный формат<select name="format"><option>Индивидуально</option><option>В паре</option><option>Мини-группа</option></select></label>
+<label class="chk"><input type="checkbox" name="agree" required aria-describedby="e4"><span>Согласен(на) на обработку персональных данных</span><span class="err" id="e4"></span></label>
+<button class="btn" id="sub" type="submit">Отправить заявку</button>
+<div class="res" id="res" role="status" hidden></div>
+</form></div></dialog>
+
+<script>
+(function(){
+var d=document.getElementById('dlg'),f=document.getElementById('f'),res=document.getElementById('res'),sub=document.getElementById('sub');
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+function setMenu(o){nav.classList.toggle('open',o);bg.setAttribute('aria-expanded',o)}
+bg.onclick=function(){setMenu(!nav.classList.contains('open'))};
+nav.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);bg.focus()}});
+document.addEventListener('click',function(e){
+var b=e.target.closest('[data-open]');if(!b)return;
+setMenu(false);res.hidden=true;
+if(b.dataset.goal)f.goal.value=b.dataset.goal;
+document.getElementById('dt').textContent=b.dataset.plan?'Пробный урок · тариф '+b.dataset.plan:'Пробный урок';
+d.showModal();
+});
+document.getElementById('close').onclick=function(){d.close()};
+d.addEventListener('click',function(e){if(e.target===d)d.close()});
+function bad(n,i,m){f[n].setAttribute('aria-invalid',!!m);document.getElementById(i).textContent=m||'';return !!m}
+f.addEventListener('submit',function(e){
+e.preventDefault();res.hidden=true;
+var n=f.name.value.trim(),c=f.contact.value.trim();
+var phone=/^\+?[\d\s()\-]{10,18}$/.test(c),mail=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(c),tg=/^@[A-Za-z0-9_]{5,32}$/.test(c);
+var e1=bad('name','e1',n.length<2?'Введите имя (минимум 2 символа).':'');
+var e2=bad('contact','e2',!c?'Укажите контакт для связи.':(phone||mail||tg)?'':'Введите телефон, email или @telegram в корректном формате.');
+var e3=bad('goal','e3',!f.goal.value?'Выберите цель обучения.':'');
+var e4=bad('agree','e4',!f.agree.checked?'Нужно согласие на обработку данных.':'');
+if(e1||e2||e3||e4){var first=f.querySelector('[aria-invalid=true]');if(first)first.focus();return}
+sub.disabled=true;sub.textContent='Проверяем…';
+setTimeout(function(){sub.disabled=false;sub.textContent='Отправить заявку';
+res.hidden=false;res.textContent='Это демонстрационная форма: сервер не подключён, заявка не отправлена и нигде не сохранена. Данные заполнены корректно.';
+},700);
+});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+
+// активный пункт меню
+var links={};nav.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+var so=new IntersectionObserver(function(es){es.forEach(function(x){var a=links[x.target.id];if(!a)return;if(x.isIntersecting){for(var k in links)links[k].removeAttribute('aria-current');a.setAttribute('aria-current','true')}})},{rootMargin:'-45% 0px -50% 0px'});
+Object.keys(links).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+
+// мобильная кнопка прячется, когда на экране уже есть главный CTA
+var stk=document.querySelector('.stk'),vis={};
+var co=new IntersectionObserver(function(es){es.forEach(function(x){vis[x.target.className]=x.isIntersecting});stk.classList.toggle('hide',Object.keys(vis).some(function(k){return vis[k]}))},{threshold:.2});
+co.observe(document.querySelector('.hero'));co.observe(document.querySelector('.nx'));
+})();
+</script>
+<script>
+// первый экран: пока следующий блок наезжает, слегка уменьшается и гаснет
+(function(){
+var hero=document.querySelector('.hero'),inner=hero.querySelector('.w'),rm=matchMedia('(prefers-reduced-motion: reduce)'),t=0,start=0,busy=false;
+function layout(){t=Math.min(0,innerHeight-hero.offsetHeight);hero.style.setProperty('--hero-top',t+'px');
+hero.style.position='static';start=hero.getBoundingClientRect().top+scrollY-t;hero.style.position='';upd()}
+function upd(){busy=false;var p=Math.min(1,Math.max(0,(scrollY-start)/hero.offsetHeight));
+if(rm.matches||!p){inner.style.transform='';inner.style.opacity='';return}
+inner.style.transform='translateY('+(-40*p)+'px) scale('+(1-.1*p)+')';inner.style.opacity=1-.7*p}
+addEventListener('scroll',function(){if(!busy){busy=true;requestAnimationFrame(upd)}},{passive:true});
+addEventListener('resize',layout);addEventListener('load',layout);layout();
+})();
+</script>
+<script>
+// 3D-книга на первом экране: один проход, когда сцена видна, затем спокойное состояние
+(function(){
+var h=document.documentElement,st=document.querySelector('.stage'),on=false;if(!h.classList.contains('bk-run'))return;
+function go(){h.classList.add('bk-go');setTimeout(function(){h.classList.add('bk-end')},6700)}
+// стартуем, когда сцена заметно видна; проверка по координатам надёжнее IntersectionObserver в фоновых вкладках
+function check(){if(on)return;var r=st.getBoundingClientRect(),vh=innerHeight;
+if(r.top<vh*.8&&r.bottom>vh*.2){on=true;removeEventListener('scroll',check);removeEventListener('resize',check);go()}}
+addEventListener('scroll',check,{passive:true});addEventListener('resize',check);
+setTimeout(check,250);
+})();
+</script>
+<script>
+// путь из 4 шагов: шаг загорается, свет бежит по пунктиру к следующему
+(function(){
+var sg=document.getElementById('steps'),trk=sg.querySelector('.trk'),fill=sg.querySelector('.fill'),st=[].slice.call(sg.querySelectorAll('.st'));
+var mq=matchMedia('(max-width:860px)'),fr=[0,1/3,2/3,1],cur=-1,done=false;
+function layout(){
+var v=mq.matches;sg.classList.toggle('v',v);
+if(v){var c=st.map(function(s){var i=s.querySelector('i');return i.offsetTop+s.offsetTop+22});
+trk.style.height=(c[3]-c[0])+'px';trk.style.width='';fr=c.map(function(y){return (y-c[0])/(c[3]-c[0])})}
+else{trk.style.height='';trk.style.width='';fr=[0,1/3,2/3,1]}
+size(false)}
+function size(anim){var p=Math.max(cur,0),prop=mq.matches?'height':'width',other=mq.matches?'width':'height';
+if(!anim){fill.style.transition='none'}fill.style[other]='';fill.style[prop]=(fr[p]*100)+'%';
+if(!anim){void fill.offsetWidth;fill.style.transition=''}}
+function light(k){st[k].classList.add('on')}
+function run(){
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){st.forEach(function(s){s.classList.add('on')});cur=3;size(false);return}
+sg.classList.add('anim');cur=0;light(0);
+var k=0;
+function next(){if(k>=3){trk.classList.remove('go');done=true;return}
+k++;trk.classList.add('go');cur=k;size(true);
+setTimeout(function(){light(k);trk.classList.remove('go');setTimeout(next,450)},900)}
+setTimeout(next,700)}
+layout();
+(mq.addEventListener?mq.addEventListener('change',layout):mq.addListener(layout));
+addEventListener('resize',function(){if(mq.matches)layout()});
+var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){o.disconnect();run()}},{threshold:.5});o.observe(sg);
+})();
+</script>
+<script>
+(function(){
+var Q=[['She ___ a teacher.',['am','are','be','is'],3],['I ___ coffee every morning.',['drink','drinks','am drink','drinking'],0],['The opposite of “big” is ___.',['tall','old','small','long'],2],
+['Yesterday we ___ to the cinema.',['go','went','gone','goes'],1],['My sister is ___ than me.',['more tall','tallest','tall','taller'],3],['I need to ___ a decision today.',['do','make','have','give'],1],
+['If it rains tomorrow, we ___ at home.',['will stay','stay','stayed','would stay'],0],['I have lived here ___ 2019.',['for','from','since','during'],2],['He is very ___: he never stops talking.',['talking','talkative','talked','talk'],1],
+['By the time we arrived, the film ___.',['has already started','already started','was already starting','had already started'],3],['I wish I ___ more time to study yesterday.',['had had','had','have had','would have'],0],['Not only ___ late, but he also forgot the documents.',['he was','did he be','was he','he is'],2]];
+var LV=['A1','A2','B1','B2'],R={A1:['Начальный','Вы знаете базовые слова и простые конструкции.','Начните с основ: простые диалоги и базовая грамматика. Подойдёт программа Everyday English.','everyday'],A2:['Элементарный','Вы можете объясниться в привычных ситуациях и понимаете простые фразы.','Закрепите базу и расширьте словарь. Подойдут Everyday English или Speaking Club.','everyday'],B1:['Средний','Вы справляетесь с большинством бытовых тем, но сложные конструкции ещё вызывают трудности.','Развивайте свободную речь и точность. Подойдут Speaking Club или English for Work.','speaking'],B2:['Выше среднего','У вас уверенная грамматика и лексика для работы и учёбы.','Шлифуйте речь и деловой английский. Подойдут English for Work или IELTS Preparation.','work']};
+var a=[],i=0,$=function(x){return document.getElementById(x)};
+function show(id){['qzI','qzR','qzRes'].forEach(function(x){$(x).hidden=x!==id})}
+function mark(){var n=$('qzO').children;for(var k=0;k<n.length;k++)n[k].classList.toggle('on',a[i]===k);$('qzN').disabled=a[i]===undefined}
+function render(){var q=Q[i],o=$('qzO'),f=$('qzF');$('qzC').textContent='Вопрос '+(i+1)+' из '+Q.length;$('qzB').style.width=((i+1)/Q.length*100)+'%';$('qzP').setAttribute('aria-valuenow',i+1);$('qzL').textContent=q[0];o.innerHTML='';
+q[1].forEach(function(t,k){var l=document.createElement('label'),r=document.createElement('input'),b=document.createElement('b'),s=document.createElement('span');l.className='qz-o';r.type='radio';r.name='qz';r.checked=a[i]===k;r.onchange=function(){a[i]=k;mark()};b.className='qz-k';b.textContent='ABCD'.charAt(k);s.textContent=t;l.appendChild(r);l.appendChild(b);l.appendChild(s);o.appendChild(l)});
+$('qzBk').disabled=i===0;$('qzN').textContent=i===Q.length-1?'Завершить':'Далее';mark();f.classList.remove('qz-in');void f.offsetWidth;f.classList.add('qz-in')}
+function finish(){var s=0,c=[0,0,0,0];Q.forEach(function(q,k){if(a[k]===q[2]){s++;c[Math.floor(k/3)]++}});var l=0;for(var k=0;k<4;k++){if(c[k]>=2)l=k;else break}
+var r=R[LV[l]];$('qzLv').textContent=LV[l];$('qzSc').textContent=s+' из '+Q.length;$('qzNm').textContent=r[0];$('qzTx').textContent=r[1];$('qzRc').textContent='Рекомендация: '+r[2];$('qzCta').dataset.goal=r[3];show('qzRes');$('qzLv').focus()}
+function start(){a=[];i=0;show('qzR');render();$('test').scrollIntoView({block:'start'})}
+$('qzGo').onclick=start;$('qzAg').onclick=start;
+$('qzBk').onclick=function(){if(i>0){i--;render()}};
+$('qzN').onclick=function(){if(a[i]===undefined)return;if(i<Q.length-1){i++;render()}else finish()};
+})();
+</script>
+</body>
+</html>
